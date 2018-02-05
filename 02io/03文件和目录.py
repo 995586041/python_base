@@ -27,5 +27,7 @@ print(os.path.splitext('L:\gh\\new\\a.txt'))
 # 删除文件
 # os.remove('L:\gh\old')
 
-print([ x for x in os.listdir('L:\po') if os.path])
+print(os.listdir('.'))
+print([ x for x in os.listdir('.') if os.path.isfile(x)])
+print([x for x in os.listdir('.') if os.path.isfile(x) and os.path.splitext(x)[1] == '.py'])
 
